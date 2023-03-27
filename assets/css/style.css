@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* ------------------- reset css ------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font: inherit;
+    scroll-behavior: smooth;
+}
+
+
+
+/* ------------------- fin reset css ------------------- */
+html { overflow-x: hidden; } 
+
+:root {
+    --background-color-body: #181A1B;
+    --background-color-box: #243034;
+    --title : #F1662A;
+    --texte : #ffff;
+    --background-separator : #5F676B;
+  }
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background-color-body);
+    font-family: 'Bebas Neue';
+    display: block;
+}
+
+/* ------------------- Header ------------------- */
+
+#header{
+    width: 100vw;
+    height: 100vh;
+    background: url(/assets/images/backgrounds/background-header-uspl.jpg);
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* ------------------- fin style header ------------------- */
+
+
+
+/* -------------------navigation------------------- */
+
+.nav{
+    padding: 25px;
+}
+
+.nav-bar{
+    width: 65%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-color-box);
+    border-radius: 50px;
+}
+
+.nav-links{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-links-content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-links-content a{
+   font-size: 31px;
+   color: white;
+}
+
+/* ------------------- fin style navigation ------------------- */
+
+
+/* ------------------- Header text ------------------- */
+
+.header-title{
+    width: 50vw;
+    height: 20vh;
+    text-align: center;
+    padding-top: 150px;
+    color: var(--texte);
+    font-size: 120px;
+}
+.header-text {
+    width: 50vw;
+    height: 15vh;
+    color: var(--texte);
+    text-align: center;
+}
+
+.header-text-content{
+    width: 100%;
+    height: 10vh;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-subtitle-content-one{
+    width: 100%;
+    height: 15vh;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 40px;
+}
+
+.header-subtitle-content-two{
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 30px;
+}
+
+/* ------------------- fin style Header text ------------------- */
+
+
+/* ------------------- header flèche  ------------------- */
+
+.header-arrow{
+    position: absolute;
+    top : 800px;
+    width: 100%;
+    height: 10vh;
+    background-image: url(/assets/images/icons/headerArrow.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ------------------- fin style header flèche  ------------------- */
+
+
+
+/* ------------------- main  ------------------- */
+
+#main{
+    width: 100vw;
+    height: 100vh;
+}
+/* ------------------- fin style main  ------------------- */
+
+
+
+
+/* ------------------- style séparator  ------------------- */
+
+
+.separator{
+    padding-top: 100px;
+    width: 100vw;
+    height: 10vh;
+}
+
+.separator-content{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator-content hr{
+    width: 97%;
+    height: 5px;
+    border: none;
+    background-color: var(--background-separator);
+}
+
+
+
+
+/* ------------------- fin style séparator  ------------------- */
+
+
+
+
+/* ------------------- section présentation  ------------------- */
+
+
+#presentation{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+
+.presentation-flex{
+    width: 100vw;
+    height: 100vh;
+}
+
+.presentation-flex-content{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+
+.presentation-box-one{
+   width: 50%;
+   height: 80vh;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-flow: column nowrap;
+}
+
+.presentation-box-one-title{
+    padding-top: 20px;
+    width: auto;
+    height: 15vh;
+    font-size: 85px;
+    color: var(--title);
+}
+
+.presentation-box-one-text{
+    width: 80%;
+    height: auto;
+}
+
+.presentation-texte-content{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto' , sans-serif;
+    color: var(--texte);
+}
+
+.presentation-box-two{
+    width: 45%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.presentation-box-two-logo-language-content{
+    width: 100%;
+    height: 55vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.presentation-box-two-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.button-download-cv{
+    font-size: 40px;
+    text-align: center;
+    color: var(--texte);
+    background-color: #F1662A;
+    border: none;
+    width: 50%;
+    height: 8vh;
+    border-radius: 20px;
+}
+
+/* ------------------- fin section présentation  ------------------- */
+
+
+
+
+/* ------------------- section parcours  ------------------- */
+
+#parcours{
+    padding-top: 40%;
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.parcours-title-content{
+    font-size: 85px;
+    color: var(--title);
+    text-align: center;
+}
+
+
+.parcours-box{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+.parcours-box-content{
+    padding-top: 25px;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 20px;
+}
+
+.parcours-box-content .box{
+    width: 40%;
+    height: 50vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+}
+
+.chrono-line {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    transform: rotate(90deg);
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
+}
+
+
+/* ------------------- fin style parcours  ------------------- */
+
+
+
+
+/* ------------------- section skill  ------------------- */
+
+
+#skill {
+    padding-top: 10%;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#skill .skill-title-content{
+    font-size: 95px;
+    color: var(--title);
+    text-align: center;
+    height: 20vh;
+}
+
+#skill .skill-box{
+    width: 100vw;
+    height: 100vh;
+}
+
+#skill .skill-box-content{
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#skill .skill-box-content .skill-box-code{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#skill .skill-box-content .skill-box-code-content{
+    width: 50%;
+    height: 30vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+}
+
+#skill .skill-box-content .skill-box-desing{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#skill .skill-box-content .skill-box-desing-content{
+    width: 50%;
+    height: 30vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+}
+
+#skill .skill-box-content .skill-box-working{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+#skill .skill-box-content .skill-box-working-content{
+    width: 50%;
+    height: 30vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+}
+
+/* ------------------- fin section skill  ------------------- */
+
+
+/* ------------------- section project  ------------------- */
+
+#project {
+    width: 100vw;
+    height: 100vh;
+}
+
+#project .project-title{
+    padding-top: 10%;
+}
+
+#project .project-title .project-title-content{
+    font-size: 95px;
+    color: var(--title);
+    text-align: center;
+}
