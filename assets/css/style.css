@@ -1,20 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
 /* ------------------- reset css ------------------- */
 *{
     margin: 0;
     padding: 0;
     text-decoration: none;
     list-style: none;
-    font: inherit;
     scroll-behavior: smooth;
+
 }
 
-
-
 /* ------------------- fin reset css ------------------- */
-html { overflow-x: hidden; } 
+
+
+
+
+/* ------------------ scroll bar ----------------- */
+
+::-webkit-scrollbar{
+    width: 13px;
+}
+
+::-webkit-scrollbar-thumb{
+   width: 14px;
+   height: 10px;
+   background-color: white;
+   border-radius: 50px;
+}
+
+/* ------------------ fin scroll bar ----------------- */
+
+
+
+
+/* ------------------ variable css ----------------- */
+
 
 :root {
     --background-color-body: #181A1B;
@@ -25,25 +43,39 @@ html { overflow-x: hidden; }
   }
 
 
+/* ------------------ fin variable css ----------------- */
+
+
+
 
 body{
-    width: 100vw;
-    height: 100vh;
     background-color: var(--background-color-body);
     font-family: 'Bebas Neue';
     display: block;
+    animation: fade-html 1.2s;
 }
+
+@keyframes fade-html {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 /* ------------------- Header ------------------- */
 
 #header{
-    width: 100vw;
+    width: auto;
     height: 100vh;
     background: url(/assets/images/backgrounds/background-header-uspl.jpg);
-    box-sizing: border-box;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    box-sizing: border-box;
+    
 }
 
 /* ------------------- fin style header ------------------- */
@@ -54,6 +86,17 @@ body{
 
 .nav{
     padding: 25px;
+    animation: nav 1s;
+}
+
+@keyframes nav {
+    0%{
+        opacity: 0;
+        transform: translateY(-10in);
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .nav-bar{
@@ -70,21 +113,23 @@ body{
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.nav-links-content{
-    width: 100%;
-    height: auto;
-    display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.nav .nav-links-content a:hover{
+    transition: all 0.3s ease-out;
+    color: var( --title);
 }
 
 .nav-links-content a{
    font-size: 31px;
    color: white;
 }
+
+.nav-links-content a:hover{
+    text-decoration: dotted;
+ }
 
 /* ------------------- fin style navigation ------------------- */
 
@@ -95,10 +140,22 @@ body{
     width: 50vw;
     height: 20vh;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 100px;
     color: var(--texte);
-    font-size: 120px;
+    font-size: 65px;
+    animation: header-title 1.5s;
 }
+
+@keyframes header-title {
+    0%{
+        opacity: 0;
+        transform: translateX(-10in);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 .header-text {
     width: 50vw;
     height: 15vh;
@@ -140,19 +197,23 @@ body{
     background-image: url(/assets/images/icons/headerArrow.png);
     background-position: center;
     background-repeat: no-repeat;
+    animation: header-arrow 2s;
+    cursor: pointer;
 }
+
+@keyframes header-arrow {
+    0%{
+        opacity: 0;
+        transform: translateY(-5in);
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
 
 /* ------------------- fin style header flèche  ------------------- */
-
-
-
-/* ------------------- main  ------------------- */
-
-#main{
-    width: 100vw;
-    height: 100vh;
-}
-/* ------------------- fin style main  ------------------- */
 
 
 
@@ -161,13 +222,12 @@ body{
 
 
 .separator{
-    padding-top: 100px;
-    width: 100vw;
-    height: 10vh;
+    padding-top: 9%;
+    width: 100%;
 }
 
 .separator-content{
-    width: 100vw;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,22 +250,8 @@ body{
 
 /* ------------------- section présentation  ------------------- */
 
-
-#presentation{
-    width: 100vw;
-    height: 100vh;
-
-}
-
-
-.presentation-flex{
-    width: 100vw;
-    height: 100vh;
-}
-
 .presentation-flex-content{
-    width: auto;
-    height: auto;
+    padding-top: 5%;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
@@ -213,7 +259,6 @@ body{
 
 .presentation-box-one{
    width: 50%;
-   height: 80vh;
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -223,28 +268,27 @@ body{
 .presentation-box-one-title{
     padding-top: 20px;
     width: auto;
-    height: 15vh;
-    font-size: 85px;
+    height: 22vh;
+    font-size: 7em;
     color: var(--title);
 }
 
 .presentation-box-one-text{
     width: 80%;
-    height: auto;
+
 }
 
 .presentation-texte-content{
     width: 100%;
-    height: auto;
     text-align: left;
-    font-size: 25px;
+    font-size: 30px;
     font-family: 'Roboto' , sans-serif;
     color: var(--texte);
+    line-height: 50px;
 }
 
 .presentation-box-two{
     width: 45%;
-    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -269,15 +313,40 @@ body{
 }
 
 .button-download-cv{
+    position: relative;
     font-size: 40px;
     text-align: center;
     color: var(--texte);
-    background-color: #F1662A;
-    border: none;
+    border: 3px solid var(--title);
     width: 50%;
     height: 8vh;
     border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
 }
+
+.button-download-cv::before{
+    background: #F1662A;
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 0vh;
+    border-radius: 14px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(25deg); 
+    transition: all 0.5s ease-in-out;
+}
+
+.button-download-cv:hover::before{
+   height: 30vh;
+}
+
 
 /* ------------------- fin section présentation  ------------------- */
 
@@ -286,38 +355,36 @@ body{
 
 /* ------------------- section parcours  ------------------- */
 
-#parcours{
-    padding-top: 40%;
-    width: 100vw;
-    height: 100vh;
-}
-
 
 .parcours-title-content{
-    font-size: 85px;
+    font-size: 7em;
     color: var(--title);
     text-align: center;
+    padding-top: 8%;
 }
 
 
 .parcours-box{
+    padding-top: 2%;
     width: 100%;
-    height: 80vh;
+    height: auto;
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-flow: column nowrap;
+    gap: 30px;
+}
+
+.parcours-box-flex{
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .parcours-box-content{
-    padding-top: 25px;
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    gap: 20px;
+    width: 40%;
+    height: 25vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
 }
 
 .parcours-box-content .box{
@@ -325,16 +392,6 @@ body{
     height: 50vh;
     background-color: var(--background-color-box);
     border-radius: 20px;
-}
-
-.chrono-line {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    transform: rotate(90deg);
-    flex-flow: column nowrap;
-    width: 100%;
-    height: auto;
 }
 
 
@@ -346,31 +403,16 @@ body{
 /* ------------------- section skill  ------------------- */
 
 
-#skill {
-    padding-top: 10%;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    align-items: center;
-}
-
-#skill .skill-title-content{
-    font-size: 95px;
+#skill .skill-title{
+    padding-top: 8%;
+    font-size: 7em;
     color: var(--title);
     text-align: center;
-    height: 20vh;
+
 }
 
-#skill .skill-box{
-    width: 100vw;
-    height: 100vh;
-}
 
 #skill .skill-box-content{
-    width: 100vw;
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -385,6 +427,11 @@ body{
     align-items: center;
     flex-flow: row wrap;
 }
+
+#skill .skill-box-code img:hover { 
+    transform: scaleY(20px);
+}   
+
 
 #skill .skill-box-content .skill-box-code-content{
     width: 50%;
@@ -425,22 +472,90 @@ body{
     border-radius: 20px;
 }
 
+
+
 /* ------------------- fin section skill  ------------------- */
 
 
 /* ------------------- section project  ------------------- */
 
-#project {
-    width: 100vw;
-    height: 100vh;
-}
 
 #project .project-title{
-    padding-top: 10%;
+    padding-top: 15%;
 }
 
 #project .project-title .project-title-content{
     font-size: 95px;
     color: var(--title);
     text-align: center;
+}
+
+#project .project-box{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+}
+
+#project .project-box .project-box-flex{
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+#project .project-box .project-box-content{
+    width: 35%;
+    height: 45vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+
+}
+
+
+#contact{
+    padding-top: 7%;
+}
+
+#contact .contact-title{
+    height: 30vh;
+    font-size: 95px;
+    color: var(--title);
+    text-align: center;
+}
+
+#contact .contact-text{
+    font-size: 40px;
+    color: var(--texte);
+    text-align: center;
+    font-family: 'Roboto' , sans-serif;
+    line-height: 75px;
+}
+
+
+#contact .contact-box{
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+#contact .contact-box-flex{
+    width: 30vw;
+    height: 45vh;
+    background-color: var(--background-color-box);
+    border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 992px) {
+
+    html{
+        display: none;
+    }
 }

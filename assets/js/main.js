@@ -1,3 +1,3 @@
-Vue.component('presetation',{
-    template : ``
-})
+AOS.init();
+
+
