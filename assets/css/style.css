@@ -5,7 +5,6 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-
 }
 
 /* ------------------- fin reset css ------------------- */
@@ -26,7 +25,28 @@
    border-radius: 50px;
 }
 
-/* ------------------ fin scroll bar ----------------- */
+/* ------------------ Fin scroll bar ----------------- */
+
+
+
+
+/* --------------Font Bebas Neus ----------------------- */
+
+@font-face {
+    font-family: Bebeas Neus;
+    src: url(/assets/font/BebasNeus.ttf);
+    font-display: block;
+}
+
+
+
+/* --------------Font Roboto ----------------------- */
+
+@font-face {
+    font-family: Roboto;
+    src: url(/assets/font/Roboto.ttf);
+    font-display: block;
+}
 
 
 
@@ -50,8 +70,7 @@
 
 body{
     background-color: var(--background-color-body);
-    font-family: 'Bebas Neue';
-    display: block;
+    font-family: 'Bebeas Neus';
     animation: fade-html 1.2s;
 }
 
@@ -86,13 +105,13 @@ body{
 
 .nav{
     padding: 25px;
-    animation: nav 1s;
+    animation: nav 2s;
 }
 
 @keyframes nav {
     0%{
         opacity: 0;
-        transform: translateY(-10in);
+        transform: translateY(-300px);
     }
     100%{
         opacity: 1;
@@ -143,13 +162,13 @@ body{
     padding-top: 100px;
     color: var(--texte);
     font-size: 65px;
-    animation: header-title 1.5s;
+    animation: header-title 2s;
 }
 
 @keyframes header-title {
     0%{
         opacity: 0;
-        transform: translateX(-10in);
+        transform: translateX(-500px);
     }
     100%{
         opacity: 1;
@@ -194,17 +213,17 @@ body{
     top : 800px;
     width: 100%;
     height: 10vh;
+    cursor: pointer;
     background-image: url(/assets/images/icons/headerArrow.png);
     background-position: center;
     background-repeat: no-repeat;
     animation: header-arrow 2s;
-    cursor: pointer;
 }
 
 @keyframes header-arrow {
     0%{
         opacity: 0;
-        transform: translateY(-5in);
+        transform: translateY(-200px);
     }
     100%{
         opacity: 1;
