@@ -1,5 +1,5 @@
 /* ------------------- reset css ------------------- */
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -14,15 +14,15 @@
 
 /* ------------------ scroll bar ----------------- */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 13px;
 }
 
-::-webkit-scrollbar-thumb{
-   width: 14px;
-   height: 10px;
-   background-color: white;
-   border-radius: 50px;
+::-webkit-scrollbar-thumb {
+    width: 14px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50px;
 }
 
 /* ------------------ Fin scroll bar ----------------- */
@@ -56,10 +56,10 @@
 :root {
     --background-color-body: #181A1B;
     --background-color-box: #243034;
-    --title : #F1662A;
-    --texte : #ffff;
-    --background-separator : #5F676B;
-  }
+    --title: #F1662A;
+    --texte: #ffff;
+    --background-separator: #5F676B;
+}
 
 
 /* ------------------ fin variable css ----------------- */
@@ -67,17 +67,18 @@
 
 
 
-body{
+body {
     background-color: var(--background-color-body);
     font-family: 'Bebeas Neus';
     animation: fade-html 1.2s;
 }
 
 @keyframes fade-html {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -85,7 +86,7 @@ body{
 
 /* ------------------- Header ------------------- */
 
-#header{
+#header {
     width: auto;
     height: 100vh;
     background-image: url(/assets/images/backgrounds/background-header-uspl.jpg);
@@ -101,22 +102,23 @@ body{
 
 /* -------------------navigation------------------- */
 
-.nav{
+.nav {
     padding: 25px;
     animation: nav 2s;
 }
 
 @keyframes nav {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-300px);
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
 
-.nav-bar{
+.nav-bar {
     width: 65%;
     height: 7vh;
     display: flex;
@@ -126,7 +128,7 @@ body{
     border-radius: 50px;
 }
 
-.nav-links{
+.nav-links {
     width: 100%;
     height: auto;
     display: flex;
@@ -134,26 +136,26 @@ body{
     align-items: center;
 }
 
-.nav .nav-links-content a:hover{
+.nav .nav-links-content a:hover {
     transition: all 0.3s ease-out;
-    color: var( --title);
+    color: var(--title);
 }
 
-.nav-links-content a{
-   font-size: 31px;
-   color: white;
+.nav-links-content a {
+    font-size: 31px;
+    color: white;
 }
 
-.nav-links-content a:hover{
+.nav-links-content a:hover {
     text-decoration: dotted;
- }
+}
 
 /* ------------------- fin style navigation ------------------- */
 
 
 /* ------------------- Header text ------------------- */
 
-.header-title{
+.header-title {
     width: 50vw;
     height: 20vh;
     text-align: center;
@@ -164,11 +166,12 @@ body{
 }
 
 @keyframes header-title {
-    0%{
+    0% {
         opacity: 0;
         transform: translateX(-500px);
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -180,24 +183,24 @@ body{
     text-align: center;
 }
 
-.header-text-content{
+.header-text-content {
     width: 100%;
     height: 10vh;
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
 }
 
-.header-subtitle-content-one{
+.header-subtitle-content-one {
     width: 100%;
     height: 15vh;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 40px;
 }
 
-.header-subtitle-content-two{
+.header-subtitle-content-two {
     width: 100%;
     height: auto;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 30px;
 }
 
@@ -206,9 +209,9 @@ body{
 
 /* ------------------- header flèche  ------------------- */
 
-.header-arrow{
+.header-arrow {
     position: absolute;
-    top : 800px;
+    top: 800px;
     width: 100%;
     height: 10vh;
     cursor: pointer;
@@ -219,11 +222,12 @@ body{
 }
 
 @keyframes header-arrow {
-    0%{
+    0% {
         opacity: 0;
         transform: translateY(-200px);
     }
-    100%{
+
+    100% {
         opacity: 1;
     }
 }
@@ -238,19 +242,19 @@ body{
 /* ------------------- style séparator  ------------------- */
 
 
-.separator{
+.separator {
     padding-top: 9%;
     width: 100%;
 }
 
-.separator-content{
+.separator-content {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.separator-content hr{
+.separator-content hr {
     width: 97%;
     height: 5px;
     border: none;
@@ -267,22 +271,22 @@ body{
 
 /* ------------------- section présentation  ------------------- */
 
-.presentation-flex-content{
+.presentation-flex-content {
     padding-top: 5%;
     display: flex;
     justify-content: space-around;
     flex-flow: row wrap;
 }
 
-.presentation-box-one{
-   width: 50%;
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-flow: column nowrap;
+.presentation-box-one {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
 }
 
-.presentation-box-one-title{
+.presentation-box-one-title {
     padding-top: 20px;
     width: auto;
     height: 22vh;
@@ -290,21 +294,21 @@ body{
     color: var(--title);
 }
 
-.presentation-box-one-text{
+.presentation-box-one-text {
     width: 80%;
 
 }
 
-.presentation-texte-content{
+.presentation-texte-content {
     width: 100%;
     text-align: left;
     font-size: 30px;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(--texte);
     line-height: 50px;
 }
 
-.presentation-box-two{
+.presentation-box-two {
     width: 45%;
     display: flex;
     justify-content: flex-start;
@@ -312,16 +316,16 @@ body{
     flex-flow: column nowrap;
 }
 
-.presentation-box-two-logo-language-content{
+.presentation-box-two-logo-language-content {
     width: 100%;
-    height: 55vh; 
+    height: 55vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column nowrap;
 }
 
-.presentation-box-two-button{
+.presentation-box-two-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -329,7 +333,7 @@ body{
     height: auto;
 }
 
-.button-download-cv{
+.button-download-cv {
     position: relative;
     font-size: 40px;
     text-align: center;
@@ -343,10 +347,10 @@ body{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    
+
 }
 
-.button-download-cv::before{
+.button-download-cv::before {
     background: #F1662A;
     content: "";
     position: absolute;
@@ -356,12 +360,12 @@ body{
     border-radius: 14px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(25deg); 
+    transform: translate(-50%, -50%) rotate(25deg);
     transition: all 0.5s ease-in-out;
 }
 
-.button-download-cv:hover::before{
-   height: 30vh;
+.button-download-cv:hover::before {
+    height: 30vh;
 }
 
 
@@ -373,7 +377,7 @@ body{
 /* ------------------- section parcours  ------------------- */
 
 
-.parcours-title-content{
+.parcours-title-content {
     font-size: 7em;
     color: var(--title);
     text-align: center;
@@ -381,7 +385,7 @@ body{
 }
 
 
-.parcours-box{
+.parcours-box {
     padding-top: 2%;
     width: 100%;
     height: auto;
@@ -391,20 +395,20 @@ body{
     gap: 30px;
 }
 
-.parcours-box-flex{
+.parcours-box-flex {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-.parcours-box-content{
+.parcours-box-content {
     width: 40%;
     height: 25vh;
     background-color: var(--background-color-box);
     border-radius: 20px;
 }
 
-.parcours-box-content .box{
+.parcours-box-content .box {
     width: 40%;
     height: 50vh;
     background-color: var(--background-color-box);
@@ -420,7 +424,7 @@ body{
 /* ------------------- section skill  ------------------- */
 
 
-#skill .skill-title{
+#skill .skill-title {
     padding-top: 8%;
     font-size: 7em;
     color: var(--title);
@@ -429,14 +433,14 @@ body{
 }
 
 
-#skill .skill-box-content{
+#skill .skill-box-content {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-#skill .skill-box-content .skill-box-code{
+#skill .skill-box-content .skill-box-code {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -445,19 +449,19 @@ body{
     flex-flow: row wrap;
 }
 
-#skill .skill-box-code img:hover { 
+#skill .skill-box-code img:hover {
     transform: scaleY(20px);
-}   
+}
 
 
-#skill .skill-box-content .skill-box-code-content{
+#skill .skill-box-content .skill-box-code-content {
     width: 50%;
     height: 30vh;
     background-color: var(--background-color-box);
     border-radius: 20px;
 }
 
-#skill .skill-box-content .skill-box-desing{
+#skill .skill-box-content .skill-box-desing {
     width: 100%;
     height: 30vh;
     display: flex;
@@ -466,14 +470,14 @@ body{
     flex-flow: row wrap;
 }
 
-#skill .skill-box-content .skill-box-desing-content{
+#skill .skill-box-content .skill-box-desing-content {
     width: 50%;
     height: 30vh;
     background-color: var(--background-color-box);
     border-radius: 20px;
 }
 
-#skill .skill-box-content .skill-box-working{
+#skill .skill-box-content .skill-box-working {
     width: 100%;
     height: 50vh;
     display: flex;
@@ -482,7 +486,7 @@ body{
     flex-flow: row wrap;
 }
 
-#skill .skill-box-content .skill-box-working-content{
+#skill .skill-box-content .skill-box-working-content {
     width: 50%;
     height: 30vh;
     background-color: var(--background-color-box);
@@ -497,17 +501,17 @@ body{
 /* ------------------- section project  ------------------- */
 
 
-#project .project-title{
+#project .project-title {
     padding-top: 15%;
 }
 
-#project .project-title .project-title-content{
+#project .project-title .project-title-content {
     font-size: 95px;
     color: var(--title);
     text-align: center;
 }
 
-#project .project-box{
+#project .project-box {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -515,7 +519,7 @@ body{
     height: auto;
 }
 
-#project .project-box .project-box-flex{
+#project .project-box .project-box-flex {
     width: 80%;
     height: 60vh;
     display: flex;
@@ -525,7 +529,7 @@ body{
 }
 
 
-#project .project-box .project-box-content{
+#project .project-box .project-box-content {
     width: 35%;
     height: 45vh;
     background-color: var(--background-color-box);
@@ -534,35 +538,35 @@ body{
 }
 
 
-#contact{
+#contact {
     padding-top: 7%;
 }
 
-#contact .contact-title{
+#contact .contact-title {
     height: 30vh;
     font-size: 95px;
     color: var(--title);
     text-align: center;
 }
 
-#contact .contact-text{
+#contact .contact-text {
     font-size: 40px;
     color: var(--texte);
     text-align: center;
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 75px;
 }
 
 
-#contact .contact-box{
-  height: 80vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-flow: row nowrap;
+#contact .contact-box {
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-flow: row nowrap;
 }
 
-#contact .contact-box-flex{
+#contact .contact-box-flex {
     width: 30vw;
     height: 45vh;
     background-color: var(--background-color-box);
@@ -572,7 +576,7 @@ body{
 
 @media only screen and (max-width: 992px) {
 
-    html{
+    html {
         display: none;
     }
 }
