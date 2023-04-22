@@ -34,7 +34,7 @@
 
 @font-face {
     font-family: Bebeas Neus;
-    src: url(/assets/font/BebasNeus.ttf);
+    src: url(../font/BebasNeus.ttf);
     font-display: block;
 }
 
@@ -44,7 +44,7 @@
 
 @font-face {
     font-family: Roboto;
-    src: url(/assets/font/Roboto.ttf);
+    src: url(../font/Roboto.ttf);
     font-display: block;
 }
 
@@ -89,7 +89,7 @@ body {
 #header {
     width: auto;
     height: 100vh;
-    background-image: url(/assets/images/backgrounds/background-header-uspl.jpg);
+    background-image: url(../images/backgrounds/background-header-uspl.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
