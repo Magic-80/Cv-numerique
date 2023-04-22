@@ -103,20 +103,20 @@
       </div>
     </section>
 
-    <section id="parcours">
+    <section id="parcours" data-aos="fade-right" data-aos-duration="2000">
       <div class="parcours-title">
         <div class="parcours-title-content">
           <p>Mon Parcours</p>
         </div>
 
         <div class="parcours-box">
-          <div class=" parcours-box-flex parcours-box-one" data-aos="fade-down" data-aos-duration="1050">
+          <div class=" parcours-box-flex parcours-box-one">
             <div class="parcours-box-content"></div>
           </div>
-          <div class=" parcours-box-flex parcours-box-two" data-aos="fade-down" data-aos-duration="500">
+          <div class=" parcours-box-flex parcours-box-two">
             <div class="parcours-box-content"></div>
           </div>
-          <div class=" parcours-box-flex parcours-box-three" data-aos="fade-down" data-aos-duration="200">
+          <div class=" parcours-box-flex parcours-box-three">
             <div class="parcours-box-content"></div>
           </div>
         </div>
@@ -129,25 +129,37 @@
       </div>
     </section>
 
-    <section id="skill">
+    <section id="skill" data-aos="fade-up" data-aos-duration="1700">
       <div class="skill-title">
         <p class="skill-title-content">Compétence</p>
       </div>
-
       <div class="skill-box">
         <div class="skill-box-content">
+
           <div class="skill-box-code">
-            <div class="skill-box-code-content" data-aos="zoom-in-right" data-aos-duration="1000"></div>
-            <img src="./assets/images/logos/logo-code.png" alt="logo-code" width="10%" />
+              <flip-card
+              title-card-front= "Front-End"
+              title-card-back = "Back-End"
+              ></flip-card>
+            <img src="/assets/images/logos/logo-code.png" alt="logo code" />
           </div>
-          <div class="skill-box-desing">
-            <img src="./assets/images/logos/logo-desing.png" alt="logo-desing" width="10%" />
-            <div class="skill-box-desing-content" data-aos="zoom-in-right" data-aos-duration="1000"></div>
-          </div>
-          <div class="skill-box-working">
-            <div class="skill-box-working-content" data-aos="zoom-in-right" data-aos-duration="1000"></div>
-            <img src="./assets/images/logos/logo-working.png" alt="logo-cafe" width="10%" />
-          </div>
+
+
+          <skill-box 
+          image-url="./assets/images/logos/logo-desing.png" 
+          image-alt="Logo desing"
+          skill-box-class="skill-box-desing"
+          skill-box-class-content="skill-box-desing-content"
+          ></skill-box>
+
+          <skill-box
+          skill-box-class="skill-box-working"
+          skill-box-class-content="skill-box-working-content"
+          >
+          <img src="/assets/images/logos/logo-working.png">
+
+          </skill-box>
+         
         </div>
       </div>
     </section>
@@ -205,9 +217,9 @@
     </footer>
   </main>
 
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script> 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="./assets/js/main.js"></script>
-
 
 </body>
 
