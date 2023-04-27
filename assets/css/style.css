@@ -434,7 +434,6 @@ body {
 /* ----------------------FLIP BOX------------------------ */
 
 .flip-card {
-    cursor: pointer;
     width: 50%;
     height: 30vh;
     perspective: 1000px;
@@ -478,20 +477,29 @@ body {
     border-radius: 20px;
 }
 
-.flip-card-front-title-back {
+.flip-card-front-title-back{
     width: 100%;
-    height: 5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column wrap;
 }
 
 .flip-card-front-title-back h1 {
+    width: 85%;
     text-align: center;
-    border-radius: 20px;
-    width: 70%;
-    height: 80%;
+    border-radius: 10px;
+    height: 4vh;
     background-color: var(--background-flip-card-title);
+    font-size: 30px;
+}
+
+.flip-card-back-img{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 

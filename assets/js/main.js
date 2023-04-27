@@ -3,7 +3,8 @@ Vue.component("skill-box" , {
     <div :class="skillBoxClass">
       <img :src="imageUrl" :alt="imageAlt" />
       <div :class="skillBoxClassContent">
-        
+        <h1> {{title}} <h1>
+        <img :src= "" alt = ""></img> 
       </div>
       <slot></slot>
     </div>`,
@@ -18,11 +19,15 @@ Vue.component("skill-box" , {
         },
         skillBoxClass: {
           type: String,
-          default: ""
         },
         skillBoxClassContent: {
           type: String,
-          default: ""
+        },
+        title :{
+          type: String,
+        },
+        skillBoxImg : {
+          type : String,
         }
       },
 
@@ -35,18 +40,29 @@ Vue.component("flip-card" , {
       <div class="flip-card-front">
       <div class ="flip-card-front-title-back">
         <h1> {{titleCardFront}} </h1>
+        <div class = "flip-card-back-img">
+          <img src="./assets/images/icons/html.png" alt="logo cSharp" width = "15%"/>
+          <img src="./assets/images/icons/css.png" alt="logo cSharp" width = "15%"/>
+          <img src="./assets/images/icons/js.png" alt="logo cSharp" width = "15%"/>
+          <img src="./assets/images/icons/vuejs.png" alt="logo cSharp" width = "15%"/>
+      </div>
       </div>
       </div>
       <div class="flip-card-back">
        <div class ="flip-card-front-title-back">
         <h1> {{titleCardBack}} </h1>
+        <div class = "flip-card-back-img">
+          <img src="./assets/images/icons/cSharp.png" alt="logo cSharp" width = "15%"/>
+          <img src="./assets/images/icons/python.png" alt="logo python" width = "15%"/>
+          <img src="./assets/images/icons/my-sql.png" alt="logo " width = "15%"/>
+          <img src="./assets/images/icons/wordpress.png" alt="logo cSharp" width = "15%"/>
+        </div>
       </div>
       </div>
     </div>
   </div>`,
 
-    props : ["titleCardFront" ,"titleCardBack" ]
-
+    props : ["titleCardFront" ,"titleCardBack"],
 
 })
 
@@ -63,13 +79,40 @@ Vue.component("title-section" , {
 })
 
 
+Vue.component("computed" , {
+  template : ` 
+  <div>
+  <p>{{ message }}</p>
+  <button @click="emitMessage">Changer le message</button>
+</div>` ,
 
-var app = new Vue({
+data() {
+  return {
+    message: 'Bonjour le monde!'
+  }
+},
+methods: {
+  emitMessage() {
+    this.$emit('changeMessage', 'message')
+  }
+},
+beforeUpdate() {
+  console.log('Le composant est sur le point d\'être mis à jour avec la nouvelle valeur de "message" : ' + this.message)
+}
+}),
+
+new Vue({
     el : "#main",
+
+    methods : {
+      changeMessage ()  {
+        this.message
+      }
+    }
 })
 
 
 
-AOS.init();
+// AOS.init();
 
 
