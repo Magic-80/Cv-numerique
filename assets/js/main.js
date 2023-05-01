@@ -3,8 +3,7 @@ Vue.component("skill-box" , {
     <div :class="skillBoxClass">
       <img :src="imageUrl" :alt="imageAlt" />
       <div :class="skillBoxClassContent">
-        <h1> {{title}} <h1>
-        <img :src= "" alt = ""></img> 
+        <h1> {{title}}</h1>
       </div>
       <slot></slot>
     </div>`,
@@ -79,40 +78,12 @@ Vue.component("title-section" , {
 })
 
 
-Vue.component("computed" , {
-  template : ` 
-  <div>
-  <p>{{ message }}</p>
-  <button @click="emitMessage">Changer le message</button>
-</div>` ,
-
-data() {
-  return {
-    message: 'Bonjour le monde!'
-  }
-},
-methods: {
-  emitMessage() {
-    this.$emit('changeMessage', 'message')
-  }
-},
-beforeUpdate() {
-  console.log('Le composant est sur le point d\'être mis à jour avec la nouvelle valeur de "message" : ' + this.message)
-}
-}),
-
 new Vue({
     el : "#main",
-
-    methods : {
-      changeMessage ()  {
-        this.message
-      }
-    }
 })
 
 
 
-// AOS.init();
+AOS.init();
 
 
