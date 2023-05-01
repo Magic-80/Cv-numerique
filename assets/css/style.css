@@ -208,14 +208,6 @@ body {
 /* ------------------- fin style Header text ------------------- */
 
 
-/* ------------------- header flèche  ------------------- */
-
-
-
-/* ------------------- fin style header flèche  ------------------- */
-
-
-
 
 /* ------------------- style séparator  ------------------- */
 
@@ -240,6 +232,13 @@ body {
 }
 
 
+
+.title-section{
+    padding: 5%;
+    font-size: 7em;
+    color: var(--title);
+    text-align: center;
+}
 
 
 /* ------------------- fin style séparator  ------------------- */
@@ -521,8 +520,20 @@ body {
     height: 30vh;
     background-color: var(--background-color-box);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
+#skill .skill-box-desing .skill-box-desing-content h1 {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-flip-card-title);
+    color: #fff;
+    font-size: 35px;
+    border-radius: 10px;
+}
 
 #skill .skill-box-content .skill-box-working {
     width: 100%;
@@ -539,9 +550,20 @@ body {
     height: 30vh;
     background-color: var(--background-color-box);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
-
+#skill .skill-box-working .skill-box-working-content h1{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background-flip-card-title);
+    color: #fff;
+    font-size: 35px;
+    border-radius: 10px;
+}
 
 
 /* ------------------- fin section skill  ------------------- */

@@ -69,12 +69,16 @@ Vue.component("flip-card" , {
 Vue.component("projet-box" , {
     template : ``,
 
-
 })
 
 
 Vue.component("title-section" , {
-    template : ``,
+    template : `
+    <div class = "title-section" data-aos="fade-down-right" data-aos-duration="1000">
+      <p> {{title}} </p>
+    </div>`,
+
+    props : ["title"]
 })
 
 
