@@ -4,8 +4,10 @@ Vue.component("skill-box" , {
       <img :src="imageUrl" :alt="imageAlt" />
       <div :class="skillBoxClassContent">
         <h1> {{title}}</h1>
+        <div class = "skill-box-img">
+         <slot></slot>
+        </div>
       </div>
-      <slot></slot>
     </div>`,
     
     
@@ -27,7 +29,7 @@ Vue.component("skill-box" , {
         },
         skillBoxImg : {
           type : String,
-        }
+        },
       },
 
 })
