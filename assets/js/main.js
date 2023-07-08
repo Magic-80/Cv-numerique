@@ -68,6 +68,17 @@ Vue.component("flip-card" , {
 })
 
 
+Vue.component("button-download" , {
+  template : `  <div class="presentation-box-two-button">
+  <a class="button-download-cv" :href="link" :download="transfer"> {{title}} </a>
+</div>`,
+
+ props : ["title" ,"link" , "transfer"],
+
+})
+
+
+
 Vue.component("projet-box" , {
     template : ``,
 
