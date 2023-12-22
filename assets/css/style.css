@@ -87,9 +87,9 @@ body {
 /* ------------------- Header ------------------- */
 
 #header {
-    width: auto;
+    width: auto;    
     height: 100vh;
-    background-image: url(../images/backgrounds/background-header-uspl.jpg);
+    background-image: url(../images/backgrounds/background-header.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -203,9 +203,9 @@ body {
 
 .header-subtitle-content-two {
     width: 100%;
-    height: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
+    padding-left: 30px;
 }
 
 /* ------------------- fin style Header text ------------------- */
