@@ -1,0 +1,13 @@
+@use "/assets/sass/abstract/variables";
+.button{
+    width: 10%;
+    height: 10vh;
+    border-radius: 10px;
+    background-color: $blue;
+
+    &-text{
+        color: $white;
+        font-size: $button_font_size;
+        font-family: "";
+    }
+}
