@@ -1,0 +1,36 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/variables' as *;
+@use '../base/typo';
+
+.navbar_center{
+    @include m.dflex(flex , center , center , wrap , row);
+    color: $white;
+    height: 20vh;
+}
+
+.navbar{
+    @include m.dflex(flex , center , center , wrap , row);
+    width: 100%;
+    &_links{
+        width: 75%;
+        height: 10vh;
+        gap: 20%;
+        @include m.dflex(flex , space-between , center , wrap , row);
+        border-radius: 15px;
+        background-color: $background_color_variant;
+        
+        &-left{
+            width: 20%;
+            gap: 20px;
+            @include m.dflex(flex , center , center , wrap , row);
+            
+        }
+        
+        &-right{
+            width: 50%;
+            @include m.dflex(flex , space-around , center , wrap , row);
+
+        }
+    }
+}
+

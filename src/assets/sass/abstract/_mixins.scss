@@ -1,0 +1,15 @@
+@mixin dflex($display , $justify-content , $align-items , $wrap , $direction)
+{
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-flow: $wrap $direction;
+}
+
+@mixin backgroundImage($url , $position , $repeat , $size)
+{
+    background-image: url($url);
+    background-position: $position;
+    background-repeat: $repeat;
+    background-size: $size;
+}

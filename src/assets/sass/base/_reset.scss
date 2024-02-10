@@ -1,0 +1,30 @@
+@use "../abstract/mixins" as m;
+@use "../abstract/variables" as *;
+@use "../base/typo.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-size: $font-size-text;
+    font-family: $Manrope-Regular;
+    background-color: $background_color;
+    color: $white;
+}
+
+a{
+    color: $white;
+}
+
+span{
+    color: $blue;
+    padding-left: 10px;
+}

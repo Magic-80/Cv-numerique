@@ -1,0 +1,55 @@
+@use '../abstract/variables.scss' as *;
+@use '../abstract/mixins' as m;
+@use '../base/typo';
+
+@use '../layout/header';
+@use '../layout/footer';
+
+
+.about{
+    padding-top: 50px;
+    width: 100%;    
+
+    &_background{
+        width: 100%;
+        background-color: $background_color_variant;
+    }
+
+    .about_title{
+        @include m.dflex(flex , center , center , wrap , row);
+        font-size: $font-size-title;
+        font-family: $Poppins-Bold;
+        height: 20vh;
+    }
+
+    .about_text{
+        font-size: $font-size-text;
+        font-family: $Manrope-Regular;
+    }
+
+    .about_content{
+        width: 100%;
+        @include m.dflex(flex , space-around , center , wrap , row);
+
+        &_left{
+            @include m.dflex(flex , center , center , wrap , column);
+            width: 40%;
+            gap: 20px;
+        }
+
+        &_right{
+            @include m.dflex(flex , center , center , wrap , column);
+            width: 25%;
+            gap: 80px;
+        }
+    }
+
+
+
+   
+}
+
+
+.experience{
+    padding-top: 50px;
+}

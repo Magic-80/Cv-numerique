@@ -1,0 +1,18 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/variables' as *;
+@use '../base/typo';
+
+
+
+.title{
+    color: white;
+    @include m.dflex(flex , center , center , wrap , row);
+    font-size: $font-size-title;
+    font-family: $Poppins-Bold;
+    height: 20vh;
+
+    
+    
+}
+
+

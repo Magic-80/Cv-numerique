@@ -1,0 +1,29 @@
+@use '../abstract/mixins' as m;
+@use '../abstract/variables' as *;
+@use '../base/typo';
+
+
+
+button{
+    @include m.dflex(flex , center , center , wrap , row);
+    padding: 14px 50px;
+    border-radius: 10px;
+    border: none;
+    color: $white;
+    font-size: $font_size_button;
+    font-family: $Manrope-Regular;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.button_about{
+    background-color: $background_color_variant;
+    
+}
+
+.button_download{
+    background-color: $background_color_blue;
+
+
+}
+

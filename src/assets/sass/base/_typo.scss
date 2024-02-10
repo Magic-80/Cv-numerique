@@ -1,0 +1,26 @@
+
+// Poppins
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: local('Poppins-bold'), url("/public/fonts/Poppins-Bold.ttf") format('ttf');
+}
+
+@font-face {
+    font-family: "Poppins-bold-italic";
+    src: local('Poppins-bold-italic'), url("/public/fonts/Poppins-Bold-Italic.ttf") format('ttf');
+
+}
+
+@font-face {
+    font-family: "Poppins-light-italic";
+    src: local('Poppins-light-italic'), url("/public/fonts/Poppins-Light-Italic.ttf") format('ttf');
+
+}
+
+// manrope
+
+@font-face {
+    font-family: "Manrope-Regular";
+    src: local('Manrope-Regular'), url("/public/fonts/Manrope-Regular.ttf") format('ttf');
+}
