@@ -33,7 +33,7 @@ function About()
 
                             <div className="about_content_right">
                                 <img src="/public/images/logos/photo-identiter.png" alt="" />
-                                <Button type={"button"} className={"button_download"} title={"Télécharger mon cv"}/>
+                                <Button type={"button"} className={"button_color_blue"} title={"Télécharger mon cv"}/>
                             </div>
                         </div>
                     </div>

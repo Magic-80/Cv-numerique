@@ -10,12 +10,12 @@ function Header()
                 <div className="header_row">
                     <div className="header_colum_left">
                         <p className="header_title"> Bonjour, je m’appelle <span> Théo </span> </p>
-                        <p className="header_subtitle"> Etudiants en tant que Développeur Web  </p>
+                        <p className="header_subtitle"> Etudiants en tant que Développeur Web </p>
                         <p className="header_text">  Actuellement en recherche d’un stage et d’une alternance en développement web  </p>
 
                         <div className="header_button">
-                            <Button type={"button"}  className={"button_about"} title={"About me"} />
-                            <Button type={"button"}  className={"button_download"} title={"Télécharger mon cv"} />
+                            <Button type={"button"}  className={"button_color_variant"} title={"About me"} />
+                            <Button type={"button"}  className={"button_color_blue"} title={"Télécharger mon cv"} />
                             <a href=""> <img src="/public/images/icons/linkedin-icon.png" alt="" /> </a>
                             <a href=""> <img src="/public/images/icons/github_icon.png" alt="" /> </a>
                         </div>
