@@ -134,12 +134,13 @@
 
 .contact{
     @include m.dflex(flex, center, center, wrap, column);
-    padding-top: 50px;
+    padding: 50px 0px 80px 0px;
     gap: 20px;
 
     &_text{
         text-align: center;
         line-height: 35px;
+        color: $gray;
     }
 }
 

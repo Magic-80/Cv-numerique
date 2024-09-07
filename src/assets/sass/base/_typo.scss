@@ -24,3 +24,8 @@
     font-family: "Manrope-Regular";
     src: local('Manrope-Regular'), url("/public/fonts/Manrope-Regular.ttf") format('ttf');
 }
+
+@font-face {
+    font-family: "Manrope-Extra-Bold";
+    src: local('Manrope-Extra-Bold'), url("/public/fonts/Manrope-ExtraBold.ttf") format('ttf');
+}
