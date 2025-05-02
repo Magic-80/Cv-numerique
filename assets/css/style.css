@@ -27,36 +27,33 @@
   --font-poppins-bold: 'Poppins-bold';
   --font-poppins-bold-italic: 'Poppins-bold-italic';
   --font-poppins-light-italic: 'Poppins-light-italic';
-  --font-manrope-regular: 'Manrope';
+  --font-manrope-regular: 'Manrope-Regular';
   --font-manrope-extra-bold: 'Manrope-Extra-Bold';
 }
 
 @font-face {
   font-family: 'Poppins-bold';
-  src: local('Poppins-bold'), url('/fonts/Poppins-Bold.ttf') format('ttf');
+  src: url('/assets/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
   font-family: 'Poppins-bold-italic';
-  src: local('Poppins-bold-italic'),
-    url('/fonts/Poppins-Bold-Italic.ttf') format('ttf');
+  src: url('/assets/fonts/Poppins-Bold-Italic.ttf');
 }
 
 @font-face {
   font-family: 'Poppins-light-italic';
-  src: local('Poppins-light-italic'),
-    url('/fonts/Poppins-Light-Italic.ttf') format('ttf');
+  src: url('/assets/fonts/Poppins-Light-Italic.ttf');
 }
 
 @font-face {
   font-family: 'Manrope-Regular';
-  src: local('Manrope-Regular'), url('/fonts/Manrope-Regular.ttf') format('ttf');
+  src: url('/assets/fonts/Manrope-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Manrope-Extra-Bold';
-  src: local('Manrope-Extra-Bold'),
-    url('/fonts/Manrope-ExtraBold.ttf') format('ttf');
+  src: url('/assets/fonts/Manrope-ExtraBold.ttf');
 }
 
 body {
@@ -74,4 +71,38 @@ a {
 span {
   color: var(--blue);
   padding-left: 10px;
+}
+
+#header{
+  padding-top: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_nav{
+  width: 90%;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: var(--background-color-variant);
+}
+
+.header_nav_title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 38px;
+}
+
+.nav{
+  padding-right: 38px;
+}
+
+.nav ul{
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
