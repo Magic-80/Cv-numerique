@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Couleurs */
+  --background-color: #202020;
+  --background-color-variant: #323232;
+  --background-color-blue: #00adb5;
+  --blue: #00adb5;
+  --blue-variant: #4594ae;
+  --white: #ffffff;
+  --gray: #959595;
+
+  /* Tailles de police */
+  --font-size-title: 3.3rem;
+  --font-size-text: 1.2rem;
+  --font-size-button: 1.1rem;
+  --font-size-subtitle: 1.5rem;
+
+  /* Polices */
+  --font-poppins-bold: 'Poppins-bold';
+  --font-poppins-bold-italic: 'Poppins-bold-italic';
+  --font-poppins-light-italic: 'Poppins-light-italic';
+  --font-manrope-regular: 'Manrope';
+  --font-manrope-extra-bold: 'Manrope-Extra-Bold';
+}
+
+@font-face {
+  font-family: 'Poppins-bold';
+  src: local('Poppins-bold'), url('/fonts/Poppins-Bold.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-bold-italic';
+  src: local('Poppins-bold-italic'),
+    url('/fonts/Poppins-Bold-Italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Poppins-light-italic';
+  src: local('Poppins-light-italic'),
+    url('/fonts/Poppins-Light-Italic.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Manrope-Regular';
+  src: local('Manrope-Regular'), url('/fonts/Manrope-Regular.ttf') format('ttf');
+}
+
+@font-face {
+  font-family: 'Manrope-Extra-Bold';
+  src: local('Manrope-Extra-Bold'),
+    url('/fonts/Manrope-ExtraBold.ttf') format('ttf');
+}
+
+body {
+  font-size: var(--font-size-text);
+  font-family: var(--font-manrope-regular);
+  background-color: var(--background-color);
+  color: var(--white);
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+span {
+  color: var(--blue);
+  padding-left: 10px;
+}
