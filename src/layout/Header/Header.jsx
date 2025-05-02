@@ -16,13 +16,13 @@ function Header()
                         <div className="header_button">
                             <Button type={"button"}  className={"button_color_variant"} title={"About me"} />
                             <Button type={"button"}  className={"button_color_blue"} title={"Télécharger mon cv"} />
-                            <a href=""> <img src="/public/images/icons/linkedin-icon.png" alt="" /> </a>
-                            <a href=""> <img src="/public/images/icons/github_icon.png" alt="" /> </a>
+                            <a href=""> <img src="/images/icons/linkedin-icon.png" alt="" /> </a>
+                            <a href=""> <img src="/images/icons/github_icon.png" alt="" /> </a>
                         </div>
 
                     </div>
                     <div className="header_colum_right">
-                        <img src="/public/images/backgrounds/header_img.png" alt="img de représentation" />
+                        <img src="/images/backgrounds/header_img.png" alt="img de représentation" />
                     </div>
                 </div>
 
