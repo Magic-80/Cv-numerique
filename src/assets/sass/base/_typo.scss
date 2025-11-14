@@ -3,18 +3,18 @@
 
 @font-face {
     font-family: "Poppins-bold";
-    src: local('Poppins-bold'), url("/fonts/Poppins-Bold.ttf") format('ttf');
+    src: url("/src/assets/fonts/Poppins-Bold.ttf");
 }
 
 @font-face {
     font-family: "Poppins-bold-italic";
-    src: local('Poppins-bold-italic'), url("/fonts/Poppins-Bold-Italic.ttf") format('ttf');
+    src: url("/src/assets/fonts/Poppins-Bold-Italic.ttf");
 
 }
 
 @font-face {
     font-family: "Poppins-light-italic";
-    src: local('Poppins-light-italic'), url("/fonts/Poppins-Light-Italic.ttf") format('ttf');
+    src: url("/src/assets/fonts/Poppins-Light-Italic.ttf");
 
 }
 
@@ -22,10 +22,10 @@
 
 @font-face {
     font-family: "Manrope-Regular";
-    src: local('Manrope-Regular'), url("/fonts/Manrope-Regular.ttf") format('ttf');
+    src: url("/src/assets/fonts/Manrope-Regular.ttf");
 }
 
 @font-face {
     font-family: "Manrope-Extra-Bold";
-    src: local('Manrope-Extra-Bold'), url("/fonts/Manrope-ExtraBold.ttf") format('ttf');
+    src: url("/src/assets/fonts/Manrope-ExtraBold.ttf");
 }

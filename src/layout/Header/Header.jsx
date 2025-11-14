@@ -1,5 +1,8 @@
 import Nav from "../Nav/Nav";
 import Button from "../../components/Button/Button";
+import linkedin_icon from "../../assets/images/icons/linkedin-icon.png"
+import github_icon from "../../assets/images/icons/github_icon.png"
+import header_img from "../../assets/images/backgrounds/header_img.png"
 
 function Header()
 {
@@ -16,13 +19,13 @@ function Header()
                         <div className="header_button">
                             <Button type={"button"}  className={"button_color_variant"} title={"About me"} />
                             <Button type={"button"}  className={"button_color_blue"} title={"Télécharger mon cv"} />
-                            <a href=""> <img src="/images/icons/linkedin-icon.png" alt="" /> </a>
-                            <a href=""> <img src="/images/icons/github_icon.png" alt="" /> </a>
+                            <a href=""> <img src={linkedin_icon} alt="img de linkedin" /> </a>
+                            <a href=""> <img src={github_icon} alt="img de git hub" /> </a>
                         </div>
 
                     </div>
                     <div className="header_colum_right">
-                        <img src="/images/backgrounds/header_img.png" alt="img de représentation" />
+                        <img src={header_img} alt="img de représentation" />
                     </div>
                 </div>
 

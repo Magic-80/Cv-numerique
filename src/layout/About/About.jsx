@@ -1,5 +1,7 @@
 import Button from "../../components/Button/Button"
 import Title from "../../components/Title/Title"
+import photo_identiter from "../../assets/images/logos/photo-identiter.png"
+
 function About()
 {
     return (
@@ -32,7 +34,7 @@ function About()
                             </div>
 
                             <div className="about_content_right">
-                                <img src="/images/logos/photo-identiter.png" alt="" />
+                                <img src={photo_identiter} alt="photo identiter" />
                                 <Button type={"button"} className={"button_color_blue"} title={"Télécharger mon cv"}/>
                             </div>
                         </div>

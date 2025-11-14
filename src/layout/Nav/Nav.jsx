@@ -1,3 +1,5 @@
+import nav_logo from "../../assets/images/logos/nav_logo.png"
+
 function Nav()
 {
     return (
@@ -6,7 +8,7 @@ function Nav()
                 <nav className="navbar">
                     <ul className="navbar_links">
                         <div className="navbar_links-left">
-                            <li> <a href=""> <img src="/images/logos/nav_logo.png" alt="Logo de représentation" /> </a> </li>
+                            <li> <a href=""> <img src={nav_logo} alt="Logo de représentation" /> </a> </li>
                             <li> <a href=""> <span> Deruelle </span> Théo </a> </li>
                         </div>
                         <div className="navbar_links-right">
